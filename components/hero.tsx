@@ -10,9 +10,12 @@ export default function Hero() {
           <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
             Paper
           </button>
-          <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
+          <a  href="https://github.com/pique2233/Vision-3D" target="_blank" rel="noopener noreferrer">
+            <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
             Code
-          </button>
+            </button>
+          </a>
+         
           <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
             Demo
           </button>
