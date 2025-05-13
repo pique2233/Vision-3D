@@ -7,9 +7,10 @@ export default function Hero() {
           Panoramic 3D Scene Reconstruction from a Single Image via Diffusion and Gaussian Splatting
         </p>
         <div className="flex justify-center gap-4 mb-10">
-          <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
+          <a href=""></a>
+            <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
             Paper
-          </button>
+            </button>
           <a  href="https://github.com/pique2233/Vision-3D" target="_blank" rel="noopener noreferrer">
             <button className="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-slate-900 transition-colors rounded-md">
             Code
