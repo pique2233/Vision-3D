@@ -16,6 +16,10 @@ export default function PointCloudSection() {
 
         <Tabs defaultValue="info" className="w-full" onValueChange={setActiveTab}>
           <TabsList className="grid w-full grid-cols-3 mb-8">
+            <TabsTrigger value="viewer">
+              <FileCode className="mr-2 h-4 w-4" />
+              3D Viewer
+            </TabsTrigger>
             <TabsTrigger value="info">
               <Info className="mr-2 h-4 w-4" />
               Information
@@ -23,10 +27,6 @@ export default function PointCloudSection() {
             <TabsTrigger value="folder">
               <FolderOpen className="mr-2 h-4 w-4" />
               Point Cloud Files
-            </TabsTrigger>
-            <TabsTrigger value="viewer">
-              <FileCode className="mr-2 h-4 w-4" />
-              3D Viewer
             </TabsTrigger>
           </TabsList>
 
