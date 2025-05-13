@@ -93,7 +93,7 @@ export default function PointCloudSection() {
                   clouds.
                 </CardDescription>
               </CardHeader>
-              <CardContent className="h-[500px]">
+              <CardContent className="h-[700px]">
                 <PointCloudViewer />
               </CardContent>
             </Card>

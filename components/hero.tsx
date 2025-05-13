@@ -18,7 +18,7 @@ export default function Hero() {
           </button>
         </div>
         <div className="text-lg text-slate-300">
-          <p>Ziwen Li, Xianfeng Han</p>
+          <p>Ziwen Li,  Guanyu Qv，Xianfeng Han</p>
           <p className="text-sm mt-2">Department of Computer Science, Research Institute</p>
         </div>
       </div>

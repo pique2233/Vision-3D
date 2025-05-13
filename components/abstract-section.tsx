@@ -65,16 +65,7 @@ export default function AbstractSection() {
         <Card className="p-6 shadow-lg bg-white border-0">
           <h2 className="text-2xl font-bold mb-4">Abstract</h2>
           <p className="text-gray-700 leading-relaxed">
-            We introduce RealmDreamer, a technique for generation of general forward-facing 3D scenes from text
-            descriptions. Our technique optimizes a 3D Gaussian Splatting representation to match complex text prompts.
-            We initialize these splats by utilizing the state-of-the-art text-to-image generators, lifting their samples
-            into 3D, and computing the occlusion volume. We then optimize this representation across multiple views as a
-            3D inpainting task with image-conditional diffusion models. To learn correct geometric structure, we
-            incorporate a depth diffusion model by conditioning on the samples from the inpainting model, giving rich
-            geometric structure. Finally, we finetune the model using sharpened samples from image generators. Notably,
-            our technique does not require training on any scene-specific dataset and can synthesize a variety of
-            high-quality 3D scenes in different styles, consisting of multiple objects. Its generality additionally
-            allows 3D synthesis from a single image.
+          Vision3D is an open-source system for panoramic 3D scene reconstruction from a single image, integrating cutting-edge techniques in image outpainting, depth estimation, 3D modeling, and interactive visualization. The pipeline begins with panoramic image generation using Stable Diffusion and ControlNet-based diffusion models, ensuring consistency in style, semantics, and illumination. The resulting 2:1 panorama is then sliced into multiple views and processed with Depth Anything V2 for accurate metric depth estimation. These results are fed into the Gaussian Splatting module within Nerfstudio to efficiently reconstruct high-fidelity 3D scenes. To enhance occluded perspectives and scene completeness, Vision3D incorporates novel view synthesis strategies (e.g., Zero-1-to-3) to generate unseen views and refine spatial continuity. A browser-based frontend enables users to upload images, explore the reconstruction process interactively, and manipulate 3D outputs in real time, forming a fully integrated, AI-driven platform for single-image 3D scene generation and visualization.
           </p>
         </Card>
         <div className="flex items-center justify-center">
