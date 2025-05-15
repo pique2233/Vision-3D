@@ -12,6 +12,7 @@ const POINT_CLOUD_FILES = [
   { name: "Scene 1", path: "/point-clouds/scene1.ply" },
   { name: "Scene 2", path: "/point-clouds/scene2.ply" },
   { name: "Scene 3", path: "/point-clouds/scene3.ply" },
+  { name: "Scene 4", path: "/point-clouds/scene4.ply" },
 ]
 
 export default function PointCloudViewer() {

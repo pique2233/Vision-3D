@@ -69,12 +69,16 @@ export default function AbstractSection() {
           </p>
         </Card>
         <div className="flex items-center justify-center">
-          <canvas
-            ref={canvasRef}
-            width={500}
-            height={300}
-            className="border border-slate-200 rounded-lg shadow-md bg-white"
-          />
+        <video
+          src="/video/scene.mp4"  // 替换为你的实际视频路径
+          width={500}
+          height={300}
+          controls  // 显示播放控件，如果不想显示可去掉
+          autoPlay
+          loop
+          muted
+          className="border border-slate-200 rounded-lg shadow-md bg-white object-cover"
+        />
         </div>
       </div>
     </section>
