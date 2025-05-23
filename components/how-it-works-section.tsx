@@ -14,13 +14,14 @@ export default function HowItWorksSection() {
               First, we generate a high-resolution, 360-degree panorama image based on the input text prompt or image.
               This panorama captures the overall scene layout and appearance.
             </p>
-            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200 relative">
-              {/* 添加第一张图像，并使用 layout="fill" 使其自适应 */}
+            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center border border-slate-200 relative">
+              {/* 使用 layout="intrinsic" 来根据图像的原始尺寸自动调整 */}
               <Image
                 src="/images/image1.jpg" // 替换为您第一张图像的路径
                 alt="Panorama Generation"
-                layout="fill"
-                objectFit="cover" // 使图像覆盖父容器，保持比例
+                layout="intrinsic" // 图像将根据其原始尺寸自适应调整
+                width={800} // 设置一个合适的宽度（可根据实际需要调整）
+                height={400} // 设置一个合适的高度（可根据实际需要调整）
                 className="rounded-lg"
               />
             </div>
@@ -34,13 +35,14 @@ export default function HowItWorksSection() {
               into 3DGS or mesh representations, allowing for interactive exploration and consistent views from any
               angle.
             </p>
-            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200 relative">
-              {/* 添加第二张图像，并使用 layout="fill" 使其自适应 */}
+            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center border border-slate-200 relative">
+              {/* 使用 layout="intrinsic" 来根据图像的原始尺寸自动调整 */}
               <Image
-                src="/images/image1.jpg" // 替换为您第二张图像的路径
+                src="/images/image2.jpg" // 替换为您第二张图像的路径
                 alt="Pano to Scene Conversion"
-                layout="fill"
-                objectFit="cover" // 使图像覆盖父容器，保持比例
+                layout="intrinsic" // 图像将根据其原始尺寸自适应调整
+                width={800} // 设置一个合适的宽度（可根据实际需要调整）
+                height={400} // 设置一个合适的高度（可根据实际需要调整）
                 className="rounded-lg"
               />
             </div>
