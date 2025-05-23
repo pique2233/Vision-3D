@@ -14,7 +14,7 @@ export default function HowItWorksSection() {
               This panorama captures the overall scene layout and appearance.
             </p>
             <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200">
-              <p className="text-slate-500 text-center">Image placeholder for panorama generation process</p>
+              
               {/* The user will add their image here */}
                 <Image
                  src="/images/image1.jpg" // 替换为您第一张图像的路径
