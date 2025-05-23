@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export default function HowItWorksSection() {
   return (
     <section className="py-16 bg-white">
@@ -15,6 +16,13 @@ export default function HowItWorksSection() {
             <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200">
               <p className="text-slate-500 text-center">Image placeholder for panorama generation process</p>
               {/* The user will add their image here */}
+                <Image
+                 src="/images/image1.jpg" // 替换为您第一张图像的路径
+                 alt="Panorama Generation"
+                 width={500}
+                 height={300}
+                 className="object-cover"
+                />
             </div>
           </div>
 
