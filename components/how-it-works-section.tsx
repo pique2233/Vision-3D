@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 export default function HowItWorksSection() {
   return (
     <section className="py-16 bg-white">
@@ -13,16 +14,15 @@ export default function HowItWorksSection() {
               First, we generate a high-resolution, 360-degree panorama image based on the input text prompt or image.
               This panorama captures the overall scene layout and appearance.
             </p>
-            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200">
-              
-              {/* The user will add their image here */}
-                <Image
-                 src="/images/image1.jpg" // 替换为您第一张图像的路径
-                 alt="Panorama Generation"
-                 width={500}
-                 height={300}
-                 className="object-cover"
-                />
+            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200 relative">
+              {/* 添加第一张图像，并使用 layout="fill" 使其自适应 */}
+              <Image
+                src="/images/image1.jpg" // 替换为您第一张图像的路径
+                alt="Panorama Generation"
+                layout="fill"
+                objectFit="cover" // 使图像覆盖父容器，保持比例
+                className="rounded-lg"
+              />
             </div>
           </div>
 
@@ -34,9 +34,15 @@ export default function HowItWorksSection() {
               into 3DGS or mesh representations, allowing for interactive exploration and consistent views from any
               angle.
             </p>
-            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200">
-              <p className="text-slate-500 text-center">Image placeholder for pano-to-scene conversion process</p>
-              {/* The user will add their image here */}
+            <div className="bg-slate-100 rounded-lg p-4 flex items-center justify-center h-64 border border-slate-200 relative">
+              {/* 添加第二张图像，并使用 layout="fill" 使其自适应 */}
+              <Image
+                src="/images/image1.jpg" // 替换为您第二张图像的路径
+                alt="Pano to Scene Conversion"
+                layout="fill"
+                objectFit="cover" // 使图像覆盖父容器，保持比例
+                className="rounded-lg"
+              />
             </div>
           </div>
         </div>
